@@ -1,0 +1,51 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-static": "next build && next export"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.2.10",
+    "@types/axios": "^0.14.0",
+    "@types/react-dropzone": "^5.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.19.2",
+    "cookie": "^0.4.1",
+    "js-cookie": "^2.2.1",
+    "jss-rtl": "^0.3.0",
+    "mobile-detect": "^1.4.4",
+    "moment": "^2.27.0",
+    "next": "9.3.5",
+    "next-cookies": "^2.0.3",
+    "next-pwa": "^3.0.2",
+    "rc-drawer": "^4.1.0",
+    "react": "16.13.1",
+    "react-background-slider": "^2.0.0",
+    "react-background-slideshow": "^1.0.4",
+    "react-big-calendar": "^0.26.0",
+    "react-dom": "16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-grid-system": "^7.0.3",
+    "react-icons": "^3.10.0",
+    "react-image": "^4.0.2",
+    "react-intl": "^4.7.6",
+    "react-loading-skeleton": "^2.1.1",
+    "react-spring": "^8.0.27",
+    "styled-components": "^5.1.1",
+    "stylis-plugin-rtl": "^1.0.0",
+    "toasted-notes": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "typescript": "^3.9.6"
+  }
+}
