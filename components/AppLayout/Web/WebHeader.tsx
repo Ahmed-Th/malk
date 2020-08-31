@@ -56,16 +56,14 @@ const WebAppBar = () => {
       elevation={3}
     >
       <Toolbar>
-        <div >
+        <div>
           <Avatar
             className={classes.logo}
             alt="I m a m"
             src="assets/imam_avatar.png"
           />
         </div>
-        <Typography className={classes.app_name}>
-            {messages.appName}
-        </Typography>
+        <Typography className={classes.app_name}>{messages.appName}</Typography>
 
         <Button
           color="inherit"
@@ -82,7 +80,11 @@ const WebAppBar = () => {
           </Typography>
         </Button>
 
-        <Button variant="outlined" color="secondary" href="">
+        <Button
+          variant="outlined"
+          color="secondary"
+          href="https://play.google.com/store/apps/details?id=com.imam"
+        >
           {messages.appStore}
         </Button>
       </Toolbar>
