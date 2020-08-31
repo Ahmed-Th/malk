@@ -54,7 +54,7 @@ const Footer: React.FC<any> = (props) => {
           <Typography className={classes.copyRight}>
             Copyright © 2020 Imam Inc.
           </Typography>
-          <Button variant="outlined" color="secondary" href="">
+          <Button variant="outlined" className={classes.about} color="secondary" href="">
             {messages.about}
           </Button>
         </Col>

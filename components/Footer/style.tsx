@@ -8,7 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     width:"100%",
     backgroundColor:"#fff",
     [theme.breakpoints.down("xs")]: {
-      padding:"4rem",
+      padding:"3rem",
     },
   },
   logoBox:{
@@ -37,16 +37,24 @@ export const useStyles = makeStyles((theme) => ({
     alignItems:"flex-end",
     justifyContent:"flex-end",
     [theme.breakpoints.down("xs")]: {
-      justifyContent:"center",
+      // justifyContent:"center",
+      alignItems:"center",
+      flexDirection:"column"
     },
   },
   copyRight:{
     opacity:".5",
-    marginRight:"1rem"
+    marginRight:"1rem",
+    [theme.breakpoints.down("xs")]: {
+      marginBottom:"2rem",
+    },
   },
   socialIcon: {
-    marginRight: ".6rem",
-    fontSize: "1.6rem",
+    marginRight: ".7rem",
+    fontSize: "2rem",
     cursor:"pointer"
   },
+  about:{
+    opacity:".5"
+  }
 }));
