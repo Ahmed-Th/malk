@@ -24,7 +24,7 @@ const Review: React.FC<any> = (props) => {
       <div className={classes.content}>
         <Rating
           name="half-rating-read"
-          defaultValue={4.5}
+          defaultValue={5}
           precision={0.5}
           readOnly
           size="large"

@@ -12,7 +12,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   info: {
-    marginTop: "5rem",
+    marginTop: "8rem",
     [theme.breakpoints.down("xs")]: {
       marginTop: "0",
     },
