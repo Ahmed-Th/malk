@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const HomePage: NextPage<Props> = ({ deviceType }) => {
+  console.log(deviceType);
   const { messages } = useLocale();
   const bookingMessages = messages.howToBook;
   const classes = useStyles();
@@ -43,15 +44,23 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
           <Review />
         </section>
         <section className={classes.feature}>
-          <Feature
-            title={messages.learnQuranWordByWord}
-            paragraph={messages.learnQuranWordByWord_Pararaph}
-            image="assets/imam.jpg"
-          />
+          {deviceType.mobile ? (
+            <RtlFeature
+              title={messages.learnQuranWordByWord}
+              paragraph={messages.learnQuranWordByWord_Pararaph}
+              image="assets/imam.jpg"
+            />
+          ) : (
+            <Feature
+              title={messages.learnQuranWordByWord}
+              paragraph={messages.learnQuranWordByWord_Pararaph}
+              image="assets/imam.jpg"
+            />
+          )}
         </section>
         <section className={classes.feature}>
           <Review />
-        </section >
+        </section>
         <section className={classes.feature}>
           <RtlFeature
             title={messages.CompeteInGoodDeeds}
@@ -59,6 +68,22 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
             image="assets/imam_2.jpg"
           />
         </section>
+        <section className={classes.feature}>
+          {deviceType.mobile ? (
+            <RtlFeature
+              title={messages.startYourJourneyLearningWithImam}
+              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              image="assets/imam_7.jpg"
+            />
+          ) : (
+            <Feature
+              title={messages.startYourJourneyLearningWithImam}
+              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              image="assets/imam_7.jpg"
+            />
+          )}
+        </section>
+        <section className={classes.feature}></section>
         <section className={classes.feature}>
           <Footer />
         </section>

@@ -26,11 +26,16 @@ export const useStyles = makeStyles((theme) => ({
     fontSize:"1.5rem"
   },
   contactBox:{
+    display:"flex",
+    alignItems:"center",
     [theme.breakpoints.down("xs")]: {
-      display:"flex",
       justifyContent:"center",
       marginBottom:"1.8rem"
     },
+  },
+  contact:{
+    fontSize:"1.3rem",
+    marginRight: ".4rem",
   },
   copyRightBox:{
     display:"flex",
@@ -50,7 +55,6 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   socialIcon: {
-    marginRight: ".7rem",
     fontSize: "2rem",
     cursor:"pointer"
   },

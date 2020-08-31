@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     // backgroundColor: "#e7cfaa",
-    backgroundColor: "#c3c3c3",
+    backgroundColor: "#CDCDCD",
     // backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDwGC_Z9Ame6_KQWY0ApbIWm9dJD756QJehg&usqp=CAU')",
     color: `${colors.textColor}`,
     padding: "0 10rem",

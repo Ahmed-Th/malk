@@ -4,11 +4,11 @@ import { colors } from "theme/colors";
 export const useStyles = makeStyles((theme) => ({
   root: {
     boxSizing: "border-box",
-    padding: "2rem 0",
+    padding: "2rem 0 0 0",
     width: "100%",
     backgroundColor: "#fff",
     [theme.breakpoints.down("xs")]: {
-      padding: "4rem 2rem",
+      padding: "4rem 2rem 0 2rem",
     },
   },
   info: {
@@ -29,9 +29,9 @@ export const useStyles = makeStyles((theme) => ({
   paragraph: {
     marginBottom: "1.2rem",
     fontSize: "1.4rem",
-    textAlign:"center",
     [theme.breakpoints.down("xs")]: {
       marginBottom:"2rem",
+      textAlign:"center",
     },
   },
   img_box:{

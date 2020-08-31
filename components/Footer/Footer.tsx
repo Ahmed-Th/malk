@@ -35,18 +35,26 @@ const Footer: React.FC<any> = (props) => {
             </Typography>
           </div>
           <div className={classes.contactBox}>
-            <Facebook
-              style={{ fill: "#3b5998" }}
-              className={classes.socialIcon}
-            />
-            <Twitter
+            <Button
+              variant="outlined"
+              color="secondary"
+              size="small"
+              href="https://www.facebook.com/www.imam.world"
+            >
+              <Typography className={classes.contact}>Contact</Typography>
+              <Facebook
+                style={{ fill: "#3b5998" }}
+                className={classes.socialIcon}
+              />
+            </Button>
+            {/* <Twitter
               style={{ fill: "#1da1f2" }}
               className={classes.socialIcon}
             />
             <Linkedin
               style={{ fill: "#007bb5" }}
               className={classes.socialIcon}
-            />
+            /> */}
           </div>
         </Col>
         {/* style={{backgroundColor:"yellow"}} */}
@@ -54,7 +62,12 @@ const Footer: React.FC<any> = (props) => {
           <Typography className={classes.copyRight}>
             Copyright © 2020 Imam Inc.
           </Typography>
-          <Button variant="outlined" className={classes.about} color="secondary" href="">
+          <Button
+            variant="outlined"
+            className={classes.about}
+            color="secondary"
+            href=""
+          >
             {messages.about}
           </Button>
         </Col>
