@@ -26,7 +26,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   general_info_box:{
-    padding:"0 8rem 0 0 !important",
+    padding:"0 12rem 0 0 !important",
     [theme.breakpoints.down("md")]: {
       padding:"0 5rem  0 0 !important",
     },
@@ -61,7 +61,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   img_box:{
     display:"flex",
-    justifyContent:"flex-end",
+    justifyContent:"ceter",
     [theme.breakpoints.down("sm")]: {
       justifyContent:"flex-start",
     },
@@ -71,11 +71,12 @@ export const useStyles = makeStyles((theme) => ({
   },
   img: {
     width: "20rem",
-    height: "95%",
+    height: "100%",
     borderRadius: "2rem",
+    boxShadow:"1rem 1rem 2rem 0rem #808080",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
-      height: "90%",
+      height: "95%",
     },
   },
   btn: {

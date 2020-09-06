@@ -42,7 +42,7 @@ const Header: React.FC<any> = () => {
         <Col md={5} className={classes.img_box} >
           <img
             className={classes.img}
-            src="assets/let'sLearnQuran.png"
+            src="assets/imam_4.jpg"
             alt="let's learn quran"
           />
         </Col>

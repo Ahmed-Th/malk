@@ -29,7 +29,7 @@ const Review: React.FC<any> = (props) => {
           readOnly
           size="large"
         />
-        {isRtl ? (
+        {/* {isRtl ? (
           <Typography className={classes.review_text}>
             "تطبيق حلو جدا ومفيد لاي حد حابب يتعلم القرآن بنطق سليم وهيكون مفيد
             للناس اللي حابة تتعلم القرآن بلغة تانية وللناس اللي بتحاول تاخد
@@ -53,6 +53,21 @@ const Review: React.FC<any> = (props) => {
             5-star from Ahmed Tharwat on the App store
           </Typography>
         )}
+        <Button
+          variant="contained"
+          className={classes.btn}
+          size="large"
+          color="primary"
+          href="https://play.google.com/store/apps/details?id=com.imam&showAllReviews=true"
+        >
+          {messages.readAllReviews}
+        </Button> */}
+          <Typography className={classes.review_text}>
+            {props.text}
+          </Typography>
+          <Typography className={classes.review_owner}>
+            {messages.fiveStartFrom} {props.name} {messages.onTheAppStore}
+          </Typography>
         <Button
           variant="contained"
           className={classes.btn}

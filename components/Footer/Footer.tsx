@@ -47,20 +47,11 @@ const Footer: React.FC<any> = (props) => {
                 className={classes.socialIcon}
               />
             </Button>
-            {/* <Twitter
-              style={{ fill: "#1da1f2" }}
-              className={classes.socialIcon}
-            />
-            <Linkedin
-              style={{ fill: "#007bb5" }}
-              className={classes.socialIcon}
-            /> */}
           </div>
         </Col>
-        {/* style={{backgroundColor:"yellow"}} */}
         <Col md={6} className={classes.copyRightBox}>
           <Typography className={classes.copyRight}>
-            Copyright © 2020 Imam Inc.
+            {messages.copyRight} © 2020 {messages.appName} .
           </Typography>
           <Button
             variant="outlined"

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       padding: "0 0 2rem 0",
     },
   },
-  feature: {
+  section: {
     marginTop: "2rem",
   },
 }));
@@ -41,50 +41,77 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
       <Header />
       <div className={classes.main}>
         <section>
-          <Review />
+          <Review text="Very nice app, questions they have for the last part are very nice as well, alot of muslims keep reading these short Suraa's without knowing their meaning because we just used to read it to memorize its words. May Allah bless you and accept your work for his sake."
+          name ="Shrief Salama" />
         </section>
-        <section className={classes.feature}>
+        <section className={classes.section}>
           {deviceType.mobile ? (
             <RtlFeature
-              title={messages.learnQuranWordByWord}
-              paragraph={messages.learnQuranWordByWord_Pararaph}
-              image="assets/imam.jpg"
+              title={messages.startYourJourneyLearningWithImam}
+              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              image="assets/imam_7.jpg"
             />
           ) : (
             <Feature
-              title={messages.learnQuranWordByWord}
-              paragraph={messages.learnQuranWordByWord_Pararaph}
-              image="assets/imam.jpg"
+              title={messages.startYourJourneyLearningWithImam}
+              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              image="assets/imam_7.jpg"
             />
           )}
         </section>
-        <section className={classes.feature}>
-          <Review />
+        <section className={classes.section}>
+          <Review text="فكرة جميلة وهادفة جدا ، استمتعت جدا بجزء الاسئلة واتعلمت منها كتير ، فرصة انك تتقن القراءة ومخارج الالفاظ من خلال البرنامج عاليه جدا ، عجبتنى فكرة عرض آيه بتفسيرها كل يوم ، ربنا ينفع بيه وبالناس اللى شغاله على الفكرة" 
+          name="eman herawy" />
         </section>
-        <section className={classes.feature}>
+        <section className={classes.section}>
           <RtlFeature
             title={messages.CompeteInGoodDeeds}
             paragraph={messages.CompeteInGoodDeeds_Paragraph}
             image="assets/imam_2.jpg"
           />
         </section>
-        <section className={classes.feature}>
+        <section className={classes.section}>
+        <Review text="السلام علیکم ورحمۃ اللہ و برکاتہ. بہت ہی زبردست ایپ ہے ماشاءاللہ. امید ہے کہ اس پر آپ خوب محنت کر کے اس کو اپنی فیلڈ کی منفرد ایپ بنا دیں گے. یہ آئیڈیا بہت زبردست ہے کہ یوزر قرآن مجید کی تصحیح اس ایپ کے ذریعے کر سکتا ہے. اس کے تمام فیچرز بہت ہی اعلی ہیں. بہت سے فیچرز ابھی آپ نے لانچ کرنے ہیں، ان کا شدت سے انتظار ہے. یقیناً یہ ایپ ان شاءاللہ آپ کے لئے دنیا و آخرت کی تمام کامیابیوں اور بھلائیوں کا ذریعہ بن جائے گی. میں امید کرتا ہوں کہ آپ جلد از جلد اس ایپ کے تمام فیچرز کو چلا دیں گے. جذاک اللہ"
+        name="FAVOURITE TEXTILES" />
+        </section>
+        <section className={classes.section}>
           {deviceType.mobile ? (
             <RtlFeature
-              title={messages.startYourJourneyLearningWithImam}
-              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
-              image="assets/imam_7.jpg"
+              title={messages.learnQuranWordByWord}
+              paragraph={messages.learnQuranWordByWord_Pararaph}
+              image="assets/imam.jpg"
             />
           ) : (
             <Feature
-              title={messages.startYourJourneyLearningWithImam}
-              paragraph={messages.startYourJourneyLearningWithImam_paragraph}
-              image="assets/imam_7.jpg"
+              title={messages.learnQuranWordByWord}
+              paragraph={messages.learnQuranWordByWord_Pararaph}
+              image="assets/imam.jpg"
             />
           )}
         </section>
-        <section className={classes.feature}></section>
-        <section className={classes.feature}>
+        <section className={classes.section}>
+        <RtlFeature
+              title={messages.FollowYourRecitation}
+              paragraph={messages.FollowYourRecitation_paragraph}
+              image="assets/imam_3.jpg"
+            />
+        </section>
+        <section className={classes.section}>
+          {deviceType.mobile ? (
+            <RtlFeature
+              title={messages.GetMoreBadges}
+              paragraph={messages.GetMoreBadges_paragraph}
+              image="assets/imam.jpg"
+            />
+          ) : (
+            <Feature
+              title={messages.GetMoreBadges}
+              paragraph={messages.GetMoreBadges_paragraph}
+              image="assets/imam.jpg"
+            />
+          )}
+        </section>
+        <section className={classes.section}>
           <Footer />
         </section>
       </div>

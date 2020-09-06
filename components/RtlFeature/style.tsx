@@ -50,7 +50,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   paragraph: {
-    marginBottom: "1.2rem",
+    marginBottom: "2rem",
     fontSize: "1.4rem",
     [theme.breakpoints.down("xs")]: {
       marginBottom:"2rem",
@@ -72,6 +72,7 @@ export const useStyles = makeStyles((theme) => ({
     width: "20rem",
     height: "92%",
     borderRadius: "2rem",
+    boxShadow:"1rem 1rem 2rem 0rem #808080",
     [theme.breakpoints.down("xs")]: {
       width: "100%",
       height: "93%",
