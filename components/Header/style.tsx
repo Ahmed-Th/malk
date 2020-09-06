@@ -39,6 +39,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   general_info: {
     marginTop: "12rem",
+    textAlign:"center",
     [theme.breakpoints.down("xs")]: {
       marginTop: "5rem",
     },
