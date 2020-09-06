@@ -7,6 +7,7 @@ import { Feature } from "components/Feature/Feature";
 import { Review } from "components/Review/Review";
 import { Footer } from "components/Footer/Footer";
 import { RtlFeature } from "components/RtlFeature/RtlFeature";
+import { WhyWaiting } from "components/WhyWaiting/WhyWating";
 // import classes from "*.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -27,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
   },
   section: {
     marginTop: "2rem",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "1rem",
+    },
   },
 }));
 
@@ -40,7 +44,7 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
       <SEO title={`Home | ${messages.appName}`} description="" />
       <Header />
       <div className={classes.main}>
-        <section>
+        <section className={classes.section}>
           <Review text="Very nice app, questions they have for the last part are very nice as well, alot of muslims keep reading these short Suraa's without knowing their meaning because we just used to read it to memorize its words. May Allah bless you and accept your work for his sake."
           name ="Shrief Salama" />
         </section>
@@ -110,6 +114,16 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
               image="assets/imam.jpg"
             />
           )}
+        </section>
+        <section className={classes.section}>
+        <RtlFeature
+              title={messages.LearnthemeaningsoftheHolyQura}
+              paragraph={messages.LearnthemeaningsoftheHolyQura_paragraph}
+              image="assets/imam_9.jpg"
+            />
+        </section>
+        <section className={classes.section}>
+          <WhyWaiting />
         </section>
         <section className={classes.section}>
           <Footer />

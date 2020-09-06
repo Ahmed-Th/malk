@@ -18,7 +18,7 @@ const Feature: React.FC<any> = (props) => {
   const { messages } = useLocale();
 
   return (
-    <div className={classes.root}>
+    <Paper elevation={3} className={classes.root}>
       <Row justify="center" gutterWidth={100} >
         <Col md ={5} className={classes.img_box}>
           <img
@@ -44,7 +44,7 @@ const Feature: React.FC<any> = (props) => {
           </div>
         </Col>
       </Row>
-    </div>
+    </Paper>
   );
 };
 

@@ -50,8 +50,9 @@ export const useStyles = makeStyles((theme) => ({
   copyRight:{
     opacity:".6",
     marginRight:"1rem",
+    marginBottom:".4rem",
     [theme.breakpoints.down("xs")]: {
-      marginBottom:"2rem",
+      marginBottom:"2rem"
     },
   },
   socialIcon: {

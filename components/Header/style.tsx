@@ -75,6 +75,8 @@ export const useStyles = makeStyles((theme) => ({
     borderRadius: "2rem",
     boxShadow:"1rem 1rem 2rem 0rem #808080",
     [theme.breakpoints.down("xs")]: {
+      // boxShadow:"0rem 0rem 2rem .5rem #808080",
+      boxShadow:".7rem .7rem 2rem 0rem #808080",
       width: "100%",
       height: "95%",
     },

@@ -76,6 +76,7 @@ export const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "100%",
       height: "93%",
+      boxShadow:".7rem .7rem 2rem 0rem #808080",
     },
   },
   btn: {

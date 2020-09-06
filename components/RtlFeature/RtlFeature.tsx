@@ -18,7 +18,7 @@ const RtlFeature: React.FC<any> = (props) => {
   const { messages } = useLocale();
 
   return (
-    <div className={classes.root}>
+    <Paper elevation={3} className={classes.root}>
       <Row justify="center">
         <Col md={7} className={classes.general_info_box}>
           <div className={classes.info}>
@@ -43,7 +43,7 @@ const RtlFeature: React.FC<any> = (props) => {
           />
         </Col>
       </Row>
-    </div>
+    </Paper>
   );
 };
 

@@ -41,7 +41,7 @@ const Footer: React.FC<any> = (props) => {
               size="small"
               href="https://www.facebook.com/www.imam.world"
             >
-              <Typography className={classes.contact}>Contact</Typography>
+              <Typography className={classes.contact}>{messages.contact}</Typography>
               <Facebook
                 style={{ fill: "#3b5998" }}
                 className={classes.socialIcon}
