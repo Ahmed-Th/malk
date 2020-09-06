@@ -22,7 +22,7 @@ const Footer: React.FC<any> = (props) => {
 
   return (
     <div className={classes.root}>
-      <Row justify="center" gutterWidth={100}>
+      <Row justify="center">
         <Col md={6}>
           <div className={classes.logoBox}>
             <Avatar

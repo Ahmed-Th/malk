@@ -48,7 +48,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   copyRight:{
-    opacity:".5",
+    opacity:".6",
     marginRight:"1rem",
     [theme.breakpoints.down("xs")]: {
       marginBottom:"2rem",
@@ -59,6 +59,6 @@ export const useStyles = makeStyles((theme) => ({
     cursor:"pointer"
   },
   about:{
-    opacity:".5"
+    opacity:".7"
   }
 }));

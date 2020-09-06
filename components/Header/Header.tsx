@@ -19,8 +19,8 @@ const Header: React.FC<any> = () => {
 
   return (
     <div className={classes.root}>
-      <Row justify="center" gutterWidth={150}>
-        <Col md={7}>
+      <Row justify="center">
+        <Col md={7} className={classes.general_info_box}>
           <div className={classes.general_info}>
             <Typography className={classes.title}>
               {messages.getStartWithImam}
@@ -39,7 +39,7 @@ const Header: React.FC<any> = () => {
             </Button>
           </div>
         </Col>
-        <Col md={5} className={classes.img_box}>
+        <Col md={5} className={classes.img_box} >
           <img
             className={classes.img}
             src="assets/let'sLearnQuran.png"

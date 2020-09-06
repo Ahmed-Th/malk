@@ -19,8 +19,8 @@ const RtlFeature: React.FC<any> = (props) => {
 
   return (
     <div className={classes.root}>
-      <Row justify="center" gutterWidth={100} >
-        <Col md={4} >
+      <Row justify="center">
+        <Col md={7} className={classes.general_info_box}>
           <div className={classes.info}>
             <Typography className={classes.title}>{props.title}</Typography>
             <Typography className={classes.paragraph}>{props.paragraph}</Typography>
@@ -35,7 +35,7 @@ const RtlFeature: React.FC<any> = (props) => {
             </Button>
           </div>
         </Col>
-        <Col md={4} style={{display:"flex",justifyContent:"center"}}>
+        <Col md={5} className={classes.img_box}>
           <img
             className={classes.img}
             src={props.image}

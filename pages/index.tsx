@@ -21,7 +21,7 @@ type Props = {
 const useStyles = makeStyles((theme) => ({
   main: {
     padding: "1rem 2rem",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       padding: "0 0 2rem 0",
     },
   },

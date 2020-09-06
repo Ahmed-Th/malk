@@ -13,8 +13,7 @@ body {
   /* padding: 0; */
   background: #fbf5ee;
   font-family: "Lato", sans-serif !important;
-
-  width: 100vw;
+  width: 100vw !important;
   overflow-x: hidden !important;
   background-size:cover;
   /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDwGC_Z9Ame6_KQWY0ApbIWm9dJD756QJehg&usqp=CAU'); */
