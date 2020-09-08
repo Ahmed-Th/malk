@@ -29,7 +29,7 @@ export const useStyles = makeStyles((theme) => ({
       padding:"0 3rem  0 0 !important",
     },
     [theme.breakpoints.down("xs")]: {
-      padding:"0 .9rem !important",
+      padding:"0 .5rem !important",
     },
   },
   info: {
@@ -53,19 +53,23 @@ export const useStyles = makeStyles((theme) => ({
   },
   paragraph_box:{
     display:"flex",
-    marginLeft:"-2.7rem",
+    marginLeft:"-2.4rem",
     [theme.breakpoints.down("sm")]: {
       marginLeft:"-1rem",
     },
     [theme.breakpoints.down("xs")]: {
-      marginLeft:"0",
+      marginLeft:"-.5rem",
     },
   },
   paragraph_icon:{
     fontSize:"2.5em",
     marginTop:"-.4rem",
     marginRight:"1.5rem",
-    padding:"0"
+    padding:"0",
+    [theme.breakpoints.down("xs")]: {
+      marginRight:"1.5rem",
+      marginTop:"-.1rem",
+    },
   },
   paragraph: {
     marginBottom: "2rem",
