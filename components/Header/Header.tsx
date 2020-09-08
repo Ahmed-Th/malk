@@ -11,7 +11,7 @@ import { useStyles } from "./style";
 import { useLocale } from "contexts/language/language.provider";
 import { useRouter } from "next/router";
 import { Container, Row, Col } from "react-grid-system";
-
+import {AiFillAndroid} from "react-icons/ai"
 const Header: React.FC<any> = () => {
   const classes = useStyles();
   const router = useRouter();
@@ -35,6 +35,7 @@ const Header: React.FC<any> = () => {
               color="primary"
               href="https://play.google.com/store/apps/details?id=com.imam"
             >
+            <AiFillAndroid className={classes.android_icon}/>
               {messages.download}
             </Button>
           </div>

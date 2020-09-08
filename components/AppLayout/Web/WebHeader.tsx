@@ -21,6 +21,9 @@ import { toggleCurrentLocale } from "contexts/language/language.helper";
 import Divider from "@material-ui/core/Divider";
 import { useAuthenticationStore } from "contexts/auth/authentication";
 import { useRouter } from "next/router";
+import {AiOutlineAndroid} from "react-icons/ai";
+import {AiFillAndroid} from "react-icons/ai"
+
 import {
   HOME_PAGE,
   LOGIN_PAGE,
@@ -84,7 +87,9 @@ const WebAppBar = () => {
           variant="outlined"
           color="secondary"
           href="https://play.google.com/store/apps/details?id=com.imam"
+          className={classes.btn}
         >
+          <AiFillAndroid className={classes.android_icon}/>
           {messages.appStore}
         </Button>
       </Toolbar>

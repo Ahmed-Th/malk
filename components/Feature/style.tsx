@@ -83,7 +83,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   general_info_box:{
-    padding:"0 0 0 10rem !important",
+    padding:"0 0 0 14rem !important",
     display:"flex",
     alignItems:"center",
     [theme.breakpoints.down("md")]: {
@@ -107,18 +107,30 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: "2.1rem ",
     fontWeight: 700,
-    marginBottom: ".5rem",
+    marginBottom: "1rem",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.8rem ",
       textAlign:"center"
     },
   },
+  paragraph_box:{
+    display:"flex",
+    // alignItems:"center"
+    marginLeft:"-2.5rem"
+  },
+  paragraph_icon:{
+    fontSize:"2rem !important",
+    marginTop:"0rem",
+    marginRight:"1.5rem",
+    padding:"0"
+  },
   paragraph: {
     marginBottom: "2rem",
-    fontSize: "1.4rem",
+    fontSize: "1.1rem",
+    opacity:".8",
     [theme.breakpoints.down("xs")]: {
       marginBottom:"2rem",
-      textAlign:"center",
+      // textAlign:"center",
     },
   },
   img_box:{

@@ -62,12 +62,10 @@ const Review: React.FC<any> = (props) => {
         >
           {messages.readAllReviews}
         </Button> */}
-          <Typography className={classes.review_text}>
-            {props.text}
-          </Typography>
-          <Typography className={classes.review_owner}>
-            {messages.fiveStartFrom} {props.name} {messages.onTheAppStore}
-          </Typography>
+        <Typography className={classes.review_text}>{props.text}</Typography>
+        <Typography className={classes.review_owner}>
+          {messages.fiveStartFrom} {props.name} {messages.onTheAppStore}
+        </Typography>
         <Button
           variant="contained"
           className={classes.btn}

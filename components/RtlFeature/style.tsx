@@ -14,11 +14,11 @@ export const useStyles = makeStyles((theme) => ({
       padding: "2rem 2rem 0 3rem",
     },
     [theme.breakpoints.down("xs")]: {
-      padding: "2rem 2rem",
+      padding: "3.5rem 2rem 2rem 2rem",
     },
   },
   general_info_box:{
-    padding:"0 10rem 0 0 !important",
+    padding:"0 13rem 0 0 !important",
     display:"flex",
     alignItems:"center",
 
@@ -45,16 +45,35 @@ export const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     marginBottom: ".5rem",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.8rem ",
-      textAlign:"center"
+      marginBottom: "1.2rem",
+      fontSize: "1.6rem ",
+      marginLeft:"2.2rem"
+      // textAlign:"center"
     },
+  },
+  paragraph_box:{
+    display:"flex",
+    marginLeft:"-2.7rem",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft:"-1rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      marginLeft:"0",
+    },
+  },
+  paragraph_icon:{
+    fontSize:"2.5em",
+    marginTop:"-.4rem",
+    marginRight:"1.5rem",
+    padding:"0"
   },
   paragraph: {
     marginBottom: "2rem",
-    fontSize: "1.4rem",
+    fontSize: "1.1rem",
+    opacity:".8",
     [theme.breakpoints.down("xs")]: {
       marginBottom:"2rem",
-      textAlign:"center",
+      // textAlign:"center",
     },
   },
   img_box:{

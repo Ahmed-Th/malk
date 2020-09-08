@@ -7,7 +7,7 @@ const theme = createMuiTheme({
       main: "#478d73"
     },
     secondary: {
-      main: "#000"
+      main: "#FFF"
     },
     success: {
       main: "#2ECC71"
@@ -49,7 +49,7 @@ const themeAR = createMuiTheme({
       main: "#478d73"
     },
     secondary: {
-      main: "#000"
+      main: "#FFF"
     },
     success: {
       main: "#2ECC71"

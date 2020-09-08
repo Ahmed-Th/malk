@@ -10,7 +10,9 @@ export const useStyles = makeStyles((theme) => ({
     boxSizing:"border-box",
     padding:"8rem 0",
     // backgroundColor:"#fff",
-    backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgWyHd_Vy01cDrG_iMKvhFD_ysvmjs2AxDdQ&usqp=CAU')",
+    backgroundSize:"cover",
+    color:`${colors.white}`,
+    backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7mFidBuC_mW_JDe6HO-U-DJ2v_cSRWwnbsg&usqp=CAU')",
     [theme.breakpoints.down("xs")]: {
       padding:"6rem 0",
     },

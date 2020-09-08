@@ -37,7 +37,7 @@ const Footer: React.FC<any> = (props) => {
           <div className={classes.contactBox}>
             <Button
               variant="outlined"
-              color="secondary"
+              color="inherit"
               size="small"
               href="https://www.facebook.com/www.imam.world"
             >
@@ -56,7 +56,7 @@ const Footer: React.FC<any> = (props) => {
           <Button
             variant="outlined"
             className={classes.about}
-            color="secondary"
+            color="inherit"
             href=""
           >
             {messages.about}

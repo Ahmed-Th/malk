@@ -21,15 +21,15 @@ type Props = {
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    padding: "1rem 2rem",
+    padding: "0 2rem 1rem 2rem",
     [theme.breakpoints.down("sm")]: {
-      padding: "0 0 2rem 0",
+      padding: "0 0 1.5rem 0",
     },
   },
   section: {
-    marginTop: "2rem",
+    marginTop: "1.5rem",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "1rem",
+      marginTop: "1.2rem",
     },
   },
 }));
@@ -53,12 +53,14 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
             <RtlFeature
               title={messages.startYourJourneyLearningWithImam}
               paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              paragraph_2={messages.learnQuranWordByWord_Pararaph}
               image="assets/imam_7.jpg"
             />
           ) : (
             <Feature
               title={messages.startYourJourneyLearningWithImam}
               paragraph={messages.startYourJourneyLearningWithImam_paragraph}
+              paragraph_2={messages.learnQuranWordByWord_Pararaph}
               image="assets/imam_7.jpg"
             />
           )}
@@ -71,6 +73,7 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
           <RtlFeature
             title={messages.CompeteInGoodDeeds}
             paragraph={messages.CompeteInGoodDeeds_Paragraph}
+            paragraph_2={messages.GetMoreBadges_paragraph}
             image="assets/imam_2.jpg"
           />
         </section>
@@ -78,7 +81,7 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
         <Review text="السلام علیکم ورحمۃ اللہ و برکاتہ. بہت ہی زبردست ایپ ہے ماشاءاللہ. امید ہے کہ اس پر آپ خوب محنت کر کے اس کو اپنی فیلڈ کی منفرد ایپ بنا دیں گے. یہ آئیڈیا بہت زبردست ہے کہ یوزر قرآن مجید کی تصحیح اس ایپ کے ذریعے کر سکتا ہے. اس کے تمام فیچرز بہت ہی اعلی ہیں. بہت سے فیچرز ابھی آپ نے لانچ کرنے ہیں، ان کا شدت سے انتظار ہے. یقیناً یہ ایپ ان شاءاللہ آپ کے لئے دنیا و آخرت کی تمام کامیابیوں اور بھلائیوں کا ذریعہ بن جائے گی. میں امید کرتا ہوں کہ آپ جلد از جلد اس ایپ کے تمام فیچرز کو چلا دیں گے. جذاک اللہ"
         name="FAVOURITE TEXTILES" />
         </section>
-        <section className={classes.section}>
+        {/* <section className={classes.section}>
           {deviceType.mobile ? (
             <RtlFeature
               title={messages.learnQuranWordByWord}
@@ -92,15 +95,15 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
               image="assets/imam.jpg"
             />
           )}
-        </section>
-        <section className={classes.section}>
+        </section> */}
+        {/* <section className={classes.section}>
         <RtlFeature
               title={messages.FollowYourRecitation}
               paragraph={messages.FollowYourRecitation_paragraph}
               image="assets/imam_3.jpg"
             />
-        </section>
-        <section className={classes.section}>
+        </section> */}
+        {/* <section className={classes.section}>
           {deviceType.mobile ? (
             <RtlFeature
               title={messages.GetMoreBadges}
@@ -114,13 +117,31 @@ const HomePage: NextPage<Props> = ({ deviceType }) => {
               image="assets/imam.jpg"
             />
           )}
-        </section>
-        <section className={classes.section}>
+        </section> */}
+        {/* <section className={classes.section}>
         <RtlFeature
               title={messages.LearnthemeaningsoftheHolyQura}
               paragraph={messages.LearnthemeaningsoftheHolyQura_paragraph}
+              paragraph_2={messages.FollowYourRecitation_paragraph}
               image="assets/imam_9.jpg"
             />
+        </section> */}
+        <section className={classes.section}>
+          {deviceType.mobile ? (
+            <RtlFeature
+              title={messages.LearnthemeaningsoftheHolyQura}
+              paragraph={messages.LearnthemeaningsoftheHolyQura_paragraph}
+              paragraph_2={messages.FollowYourRecitation_paragraph}
+              image="assets/imam_7.jpg"
+            />
+          ) : (
+            <Feature
+              title={messages.LearnthemeaningsoftheHolyQura}
+              paragraph={messages.LearnthemeaningsoftheHolyQura_paragraph}
+              paragraph_2={messages.FollowYourRecitation_paragraph}
+              image="assets/imam_7.jpg"
+            />
+          )}
         </section>
         <section className={classes.section}>
           <WhyWaiting />

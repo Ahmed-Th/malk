@@ -31,6 +31,7 @@ export const useStyles = makeStyles((theme) => ({
     },
   },
   review_owner:{
+    textAlign:"center",
     marginBottom:"1rem",
     opacity:".6"
   },
@@ -41,7 +42,7 @@ export const useStyles = makeStyles((theme) => ({
     textTransform:"none",
     fontWeight:700,
     [theme.breakpoints.down("xs")]: {
-      marginTop:"7rem",
+      marginTop:"3rem",
     },
   }
 }));

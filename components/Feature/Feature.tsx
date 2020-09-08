@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import { useStyles } from "./style";
 import { useLocale } from "contexts/language/language.provider";
 import { useRouter } from "next/router";
+import { BsCollection } from "react-icons/bs";
 import { Container, Row, Col } from "react-grid-system";
 
 const Feature: React.FC<any> = (props) => {
@@ -19,8 +20,8 @@ const Feature: React.FC<any> = (props) => {
 
   return (
     <Paper elevation={3} className={classes.root}>
-      <Row justify="center" gutterWidth={100} >
-        <Col md ={5} className={classes.img_box}>
+      <Row justify="center" gutterWidth={100}>
+        <Col md={5} className={classes.img_box}>
           <img
             className={classes.img}
             src={props.image}
@@ -31,7 +32,18 @@ const Feature: React.FC<any> = (props) => {
         <Col md={7} className={classes.general_info_box}>
           <div className={classes.info}>
             <Typography className={classes.title}>{props.title}</Typography>
-            <Typography className={classes.paragraph}>{props.paragraph}</Typography>
+            <div className={classes.paragraph_box}>
+              <BsCollection className={classes.paragraph_icon} />
+              <Typography className={classes.paragraph}>
+                {props.paragraph}
+              </Typography>
+            </div>
+            <div className={classes.paragraph_box}>
+              <BsCollection className={classes.paragraph_icon} />
+              <Typography className={classes.paragraph}>
+                {props.paragraph_2}
+              </Typography>
+            </div>
             <Button
               variant="contained"
               className={classes.btn}

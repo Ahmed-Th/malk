@@ -11,6 +11,7 @@ import { useStyles } from "./style";
 import { useLocale } from "contexts/language/language.provider";
 import { useRouter } from "next/router";
 import { Container, Row, Col } from "react-grid-system";
+import { BsCollection } from "react-icons/bs";
 
 const RtlFeature: React.FC<any> = (props) => {
   const classes = useStyles();
@@ -23,7 +24,18 @@ const RtlFeature: React.FC<any> = (props) => {
         <Col md={7} className={classes.general_info_box}>
           <div className={classes.info}>
             <Typography className={classes.title}>{props.title}</Typography>
-            <Typography className={classes.paragraph}>{props.paragraph}</Typography>
+            <div className={classes.paragraph_box}>
+              <BsCollection className={classes.paragraph_icon} />
+              <Typography className={classes.paragraph}>
+                {props.paragraph}
+              </Typography>
+            </div>
+            <div className={classes.paragraph_box}>
+              <BsCollection className={classes.paragraph_icon} />
+              <Typography className={classes.paragraph}>
+                {props.paragraph_2}
+              </Typography>
+            </div>
             <Button
               variant="contained"
               className={classes.btn}
