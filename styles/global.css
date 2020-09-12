@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   /* padding: 0; */
-  background: #fbf5ee;
+  background: #fbf5ee !important;
   font-family: "Lato", sans-serif !important;
   width: 100vw !important;
   overflow-x: hidden !important;
@@ -106,6 +106,17 @@ body.ar {
   }
 }
 
+/* //carousel */
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  color: black !important;
+  background-image:none;
+  background-color: black !important;
+}
+
+.carousel-indicators li {
+  background-color: grey !important;
+}
+
 ::-webkit-scrollbar {
   height: 0px;
   width: 5px;
@@ -131,4 +142,20 @@ div *::-webkit-scrollbar {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+/* input wezart el malia */
+
+.MuiTab-textColorPrimary.Mui-selected{
+  background-color: #fff !important;
+  border-bottom: 2.5px solid #F0F0F0 !important;
+}
+
+.MuiTabs-indicator {
+  display: none;
+}
+
+#login .MuiBox-root {
+  padding: 0 !important;
 }

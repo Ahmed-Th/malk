@@ -1,10 +1,4 @@
 import React, { useState } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Avatar from "@material-ui/core/Avatar";
-import { MdStar as StarIcon } from "react-icons/md";
-import Chip from "@material-ui/core/Chip";
-import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { useStyles } from "./style";
@@ -15,10 +9,10 @@ import {AiFillAndroid} from "react-icons/ai"
 const Header: React.FC<any> = () => {
   const classes = useStyles();
   const router = useRouter();
-  const { messages } = useLocale();
+  const { messages , isRtl } = useLocale();
 
   return (
-    <div className={classes.root}>
+    <div className={isRtl ?  classes.ar_root : classes.root}>
       <Row justify="center">
         <Col md={7} className={classes.general_info_box}>
           <div className={classes.general_info}>

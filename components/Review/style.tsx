@@ -4,10 +4,18 @@ import { colors } from "theme/colors";
 export const useStyles = makeStyles((theme) => ({
   root: {
     boxSizing:"border-box",
-    padding:"8rem 0",
+    padding:"6rem 0",
     backgroundColor:"#fff",
+    height:"36rem",
+    [theme.breakpoints.down("md")]: {
+      height:"40rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      height:"43rem",
+    },
     [theme.breakpoints.down("xs")]: {
       padding:"4rem 0",
+      height:"50rem",
     },
   },
   content:{

@@ -19,7 +19,8 @@ export const useStyles = makeStyles((theme) => ({
     //black//backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTV2ggTy0RznjJ1QFDxpz5X9BK1LbT7AybW2w&usqp=CAU')",
     //black//backgroundImage: "url('https://image.freepik.com/free-vector/golden-arabesque-arabis-style-islamic-pattern-background_1017-26083.jpg')",
     //good//backgroundImage: "url('https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-dark-wall-background-material-image_279996.jpg')",
-    backgroundImage: "url('https://png.pngtree.com/thumb_back/fh260/background/20191113/pngtree-pattern-design-blue-dark-gradient-texture-background-image_322118.jpg')",
+    //backgroundImage: "url('https://png.pngtree.com/thumb_back/fh260/background/20191113/pngtree-pattern-design-blue-dark-gradient-texture-background-image_322118.jpg')",
+    backgroundImage:"url('assets/ltr_dark_backgroung.jpg')",
     // backgroundBlendMode: 'hard-light',
     [theme.breakpoints.down("md")]: {
       padding: "2rem 6rem",
@@ -28,9 +29,34 @@ export const useStyles = makeStyles((theme) => ({
       padding: "2rem 3rem",
     },
     [theme.breakpoints.down("xs")]: {
+      backgroundSize: "contain",
+      backgroundOrigin:"border-box",
+      backgroundPosition:"bottom",
       padding: "0 2rem",
+      backgroundImage:"url('assets/IMG_20200912_134124.jpg')",
     },
   },
+  ar_root: {
+    boxSizing: "border-box",
+    padding: "2rem 15rem",
+    color:"#fff !important",
+    backgroundSize: "cover",
+    backgroundImage:"url('assets/dark_background.jpg')",
+    [theme.breakpoints.down("md")]: {
+      padding: "2rem 6rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      padding: "2rem 3rem",
+    },
+    [theme.breakpoints.down("xs")]: {
+      backgroundSize: "contain",
+      // backgroundOrigin:"border-box",
+      backgroundPosition:"bottom",
+      padding: "0 2rem",
+      backgroundImage:"url('assets/IMG_20200912_134124.jpg')",
+    },
+  },
+
   general_info_box:{
     padding:"0 12rem 0 0 !important",
     [theme.breakpoints.down("md")]: {

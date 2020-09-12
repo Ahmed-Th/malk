@@ -13,6 +13,8 @@ import AuthenticationStore, { useAuthenticationStore } from 'contexts/auth/authe
 
 import 'rc-drawer/assets/index.css';
 import 'styles/global.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { RTL } from 'contexts/RTL/RTL';
 
 
