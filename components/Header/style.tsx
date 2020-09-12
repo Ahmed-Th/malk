@@ -58,7 +58,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   general_info_box:{
-    padding:"0 12rem 0 0 !important",
+    padding:"0 13rem 0 0 !important",
     [theme.breakpoints.down("md")]: {
       padding:"0 5rem  0 0 !important",
     },

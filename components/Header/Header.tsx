@@ -14,7 +14,7 @@ const Header: React.FC<any> = () => {
   return (
     <div className={isRtl ?  classes.ar_root : classes.root}>
       <Row justify="center">
-        <Col md={7} className={classes.general_info_box}>
+        <Col md={7.7} className={classes.general_info_box}>
           <div className={classes.general_info}>
             <Typography className={classes.title}>
               {messages.getStartWithImam}
@@ -34,7 +34,7 @@ const Header: React.FC<any> = () => {
             </Button>
           </div>
         </Col>
-        <Col md={5} className={classes.img_box} >
+        <Col md={4.3} className={classes.img_box} >
           <img
             className={classes.img}
             src="assets/imam_4.jpg"
